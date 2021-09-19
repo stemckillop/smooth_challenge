@@ -11,6 +11,8 @@ import org.json.JSONObject
 
 object FavouriteRepo {
 
+    //todo: SHOULD BE ROOM DB, QUICK HACK
+
     var sharedPreferences: SharedPreferences? = null
     var map: HashMap<String, Any> = hashMapOf()
     var array: ArrayList<String> = arrayListOf()

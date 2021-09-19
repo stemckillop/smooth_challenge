@@ -17,6 +17,8 @@ object RetroRepo {
             ) {
                 if (response.isSuccessful) {
                     result.onSuccess(response.body()!!)
+                } else {
+                    result.onFailure(response.errorBody().toString())
                 }
             }
 
@@ -35,6 +37,8 @@ object RetroRepo {
             ) {
                 if (response.isSuccessful) {
                     result.onSuccess(response.body()!!)
+                } else {
+                    result.onFailure(response.errorBody().toString())
                 }
             }
 
