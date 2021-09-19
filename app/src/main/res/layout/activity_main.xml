@@ -38,7 +38,7 @@
                 android:id="@+id/main_btn_search"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:enabled="@{viewmodel.validSearch, default=false}"
+                android:enabled="false"
                 android:text="Search" />
         </LinearLayout>
 

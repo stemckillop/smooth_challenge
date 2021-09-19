@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), TextWatcher, onCellInteraction {
         grid.addOnScrollListener(object: RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
-                if (!grid.canScrollVertically(1)) {
+                if (!grid.canScrollVertically(1) && viewmodel.results.size > 0) {
                     viewmodel.searchMoreFor(colorAdapter.items.size)
                 }
             }
