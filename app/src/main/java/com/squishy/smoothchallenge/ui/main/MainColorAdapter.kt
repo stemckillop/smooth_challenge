@@ -32,7 +32,6 @@ class MainColorAdapter(var items: ArrayList<SearchResultModel>, var delegate: on
             hex.text = color.hex
 
             Glide.with(view).load(color.imageUrl).diskCacheStrategy(DiskCacheStrategy.AUTOMATIC).into(back)
-            //back.setBackgroundColor(Color.parseColor("#${color.hex}"))
 
             if (color.favourite) {
                 favourite.setImageDrawable(ResourcesCompat.getDrawable(view.context.resources, R.drawable.favourite, null))
